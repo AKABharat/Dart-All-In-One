@@ -59,6 +59,25 @@ void main(){
 //      how  are           you ???   ?
 //""";
 //  print(another);
- 
+  
+//**************************************
+  
+  // TOPIC : converting lowecase to uppercase
+  // a -> A
+//   var str = 'welcome to dart course';
+//   print(str.toUpperCase());
+  
+//   // TOPIC : converting uppercase to lowecase
+//   var man = 'WELCOME TO DART COURSE';
+//   print(man.toLowerCase());
+  
+ // NOTE : here man and str are varible of type string or object and toUpperCase & toLowerCase are methods 
+  
+ // NOTE : methods and function are different as,methods are applied to object using dot operator "." where as there is nothing such for function
+
+ // another way of representation
+//   var dis = "operating system".toUpperCase();
+//   print(dis);
+  
 //**************************************
 }
