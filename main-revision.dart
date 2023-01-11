@@ -88,7 +88,7 @@ print(marks);
      var news = "i love car";
      print(news.contains('car')); // true
      print(news.contains('bike')); // false
-     print(news.contains(' ')); // this will also return because contains method is taking space as input and space is present in string news between 'i love' & 'love car'
+     print(news.contains(' ')); // this will also return true because, 'contains method' is taking space as input and space is present in string news between 'i love' & 'love car'
   
    //  method for "replace" is : replaceAll('replacing_word','new_word')
      news = 'i love car and only carsssss !';
