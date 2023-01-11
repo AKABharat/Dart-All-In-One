@@ -79,5 +79,23 @@ void main(){
 //   var dis = "operating system".toUpperCase();
 //   print(dis);
   
+  
 //**************************************
+  
+//   TOPIC : Finding and Replacing
+//   method for "Finding" is : contains('string literal')
+//     contains method take string literal as argument and return bool value [true/false] as output
+//     var news = "i love car";
+//     print(news.contains('car')); // true
+//     print(news.contains('bike')); // false
+//   print(news.contains(' ')); // this will also return because contains method is taking space as input and space is present in string news between 'i love' & 'love car'
+  
+//   method for "replace" is : replaceAll('replacing_word','new_word')
+//   var news = 'i love car and only carsssss !';
+//   print(news.replaceAll('car','bike'));
+  // note here it will only replace 'car' with bike like in carsssss
+  
+  //**************************************
+  
+  
 }
