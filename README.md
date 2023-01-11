@@ -1,3 +1,3 @@
 # Dart-Revision-In-One-Short
-->this is a dart code file containing the concept and topics for revision purpose 
-->please ignore spelling mistakes
+- This is a dart code file containing the concept and topics for revision purpose.
+- Please ignore spelling mistakes.
