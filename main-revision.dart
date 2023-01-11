@@ -96,6 +96,43 @@ print(marks);
   // note here it will only replace 'car' with bike like in carsssss
   
   //**************************************
+
+  // TOPIC : Type conversion
+  
+  //  int -> String
+  
+//   NOTE : to check the type of a variable in program we use method " runtimeType"   syntax :  print(name_of_variable.runtimeType);
+  int ageman = 12;
+  print(ageman);
+  print(ageman.runtimeType);
+  String ageString =age; // ❌ this is wrong way because dart is strong typed language
+  String ageString = ageman.toString(); // using toString() method we can conert integer value to string
+  print(ageString);
+  print(ageString.runtimeType);
+  
+ //  double -> String
+  
+  double heightboy = 23.53;
+  print(heightboy);
+  print(heightboy.runtimeType);
+  String myString;
+  myString = heightboy.toString();
+  print(myString);
+  print(myString.runtimeType);
+//   NOTE : if you want to convet a double to string to a fixed decimal place only and not as it is as value in double then use following method below
+  print(heightboy.toStringAsFixed(1)); // have we want one value only after decimal so we used 1 here
+  // similarly,
+  print(heightboy.toStringAsFixed(2));
+  print(heightboy.toStringAsFixed(3)); // it will add 0 to the deciaml part if value after specifed does not exits from after decial value
+
+  //   String -> double
+  
+  String countinstring = '3.451';
+  print(countinstring);
+  print(countinstring.runtimeType);
+  double countdouble = double.parse(countinstring);
+  print(countdouble);
+  print(countdouble.runtimeType);
   
   
 }
