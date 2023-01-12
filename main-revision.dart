@@ -120,10 +120,10 @@ print(marks);
   print(myString);
   print(myString.runtimeType);
 //   NOTE : if you want to convet a double to string to a fixed decimal place only and not as it is as value in double then use following method below
-  print(heightboy.toStringAsFixed(1)); // have we want one value only after decimal so we used 1 here
+  print(heightboy.toStringAsFixed(1)); // here we want only one value  after decimal so we used 1 here .. output will be : 23.5
   // similarly,
-  print(heightboy.toStringAsFixed(2));
-  print(heightboy.toStringAsFixed(3)); // it will add 0 to the deciaml part if value after specifed does not exits from after decial value
+  print(heightboy.toStringAsFixed(2)); // output: 23.53
+  print(heightboy.toStringAsFixed(3)); // it will add 0 to the deciaml part if value after specifed does not exits from after decial value .. output will be : 23.530
 
   //   String -> double
   
@@ -133,6 +133,8 @@ print(marks);
   double countdouble = double.parse(countinstring);
   print(countdouble);
   print(countdouble.runtimeType);
+  
+  // NOTE : all strings can not be converted into the double like - 'hello' is a string but it can not be converted into double , because 'hello' is not decimal value rather an array of characters which is not a double but, string like '563.44' can be conveted into double or integer '563'
   
   
 }
