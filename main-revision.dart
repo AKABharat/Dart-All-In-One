@@ -136,6 +136,16 @@ print(marks);
   
   // NOTE : all strings can not be converted into the double like - 'hello' is a string but it can not be converted into double , because 'hello' is not decimal value rather an array of characters which is not a double but, string like '563.44' can be conveted into double or integer '563'
   
+    // int -> double
+  
+  // NOTE : you can not assign an integer value to double variable like: double var = 10 this is wrong 
+  // you can use toDouble() method 
+//   int var1 = 10;
+//   double var2 = var1.toDouble();
+//   print(var1);
+//   print(var1.runtimeType);
+//   print(var2);
+//   print(var2.runtimeType);
   
 }
  /*creator : Bharat */
