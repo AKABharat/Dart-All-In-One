@@ -145,7 +145,37 @@ void main() {
 //   print(var2);
 //   print(var2.runtimeType);
   
+
 //**************************************
+  
+//   TOPIC : Operators 
+  
+//   1. Arithematic operator
+//   + - / * %  ~/ 
+  
+  //   ~/  is called trucating operator , in this the fractional result is convered into an integer by rounding towards zero
+  // note: the ans of any expression is based on the operator presidence
+//   print(12+3);
+//   print(12-3);
+//   print(12*3);
+//   print(12%3);
+//   print(12/5);
+//   print(12~/5); // without this operator if we use / then output will be 2.4 , so it removes the fractional part which is .4 and output is integer only which is 2
+  // expression
+  //print(12*3-2/4); // will be solved based on operators presidence
+  
+//   2. Increment and Decrement operator
+  
+//   x++ / x-- is postfix   |   ++x / --x is prefix expression
+//   print(10++); this is wrong , you can not do directly with value only can do with variable
+//   int a = 10;
+//   print(2*a++); => here 'a' will be incremented after
+//   a = 10;
+//   print(2*++a); => here 'a' will be incremented first
+  
+  
+//   3. Logical and Relational Operator
+  
   
   
 } 
