@@ -167,11 +167,11 @@ void main() {
 //   2. Increment and Decrement operator
   
 //   x++ / x-- is postfix   |   ++x / --x is prefix expression
-   print(10++); this is wrong , you can not do directly with value only can do with variable
+   print(10++); // this is wrong , you can not do directly with value only can do with variable
    int a = 10;
-   print(2*a++); => here 'a' will be incremented after
+   print(2*a++); //=> here 'a' will be incremented after
    a = 10;
-   print(2*++a); => here 'a' will be incremented first
+   print(2*++a); //=> here 'a' will be incremented first
   
   
 //   3. Logical and Relational Operator
