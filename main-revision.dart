@@ -153,7 +153,7 @@ void main() {
 //   1. Arithematic operator
 //   + - / * %  ~/ 
   
-  //   ~/  is called trucating operator , in this the fractional result is convered into an integer by rounding towards zero
+  //   ~/  is called 'Truncating Division' , in this the fractional result is convered into an integer by rounding towards zero
   // note: the ans of any expression is based on the operator presidence
    print(12+3);
    print(12-3);
