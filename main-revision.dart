@@ -196,6 +196,31 @@ void main() {
   // but you can not compare a number with a string
  //   print(10 > 'hello');  compilation error occure [compilation with sound null safety]
   
+ /* relational operators : > <  >=  <=  == !=  */
+/* logical operators : && || [logical AND] and [logical OR] respectively */
+  
+//   NOTE :  relarional operators have more presidence over logical operators
+
+//  *****************************************
+//   one example :
+//    find out is email address is correct or not , only check does it contains @ symble in it or not 
+//   eg= biggoogle@gmail.com
+//   program is 
+  var check = 'biggoogle@gmail.com'; // this is a string, note in dart you can place a string in singlw quote ' ' also as it is a statically type language so it deside wether a value is string or character as character has only one alphabet where as string is group of alphabets
+  
+  bool ans = check.isNotEmpty && check.contains('@');
+   if(ans == true){  
+     print('valid email');
+   }
+  else{
+    print('invalid email');
+  }
+  
+  print(ans);
+    
+//  *****************************************
+  
+// TOPIC : type interface with 'var'
   
 } 
 
