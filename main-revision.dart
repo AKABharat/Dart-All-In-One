@@ -416,6 +416,33 @@ void main() {
 //   print(moj);
   
 // Map -------------------------------------
+  // Maps are collection of objects , each object having key-value pair
+// syntax : 
+/*  Map map_name{
+    'key1' : 'value1',
+    'key2' : 'value2',
+      .
+      .
+      .
+      'keyN': 'valueN'  // NOTE : value can be of any type      
+  };   */
+  
+//   eg-
+  // either you can declare type of the variable as 'Map' or var/final/const
+  Map persons = {
+    'name' : 'bharat',
+    'age' : 20,
+    'height' : 182.3,
+  };
+  print(persons);
+  
+  // other way of declaring map
+  Map <String,dynamic> person = { // here dynamic means the key and value can be of any dataype values
+    'name' : 'bharat',
+    'age' : 20,
+    'height' : 182.3,
+  };
+  print(person);
 }
 
 /*creator : Bharat */
