@@ -1,4 +1,8 @@
+/******************************************* DART PROGRAMMING LANGUAGE ****************************************/
+
 // TO USE THE CODE , PLEASE COMMENT ALL THE CODE WHICH YOU DON'T NEED
+// ⭐ TRY TO UNDERSTAND CODE WITH CONCEPTS LINE BY LINE , EVERY INFORMATION IS GIVEN RELATED TO THE CODE IN COMMENTS ⭐
+  // please ignore the spelling mistakes.
 // program written using dartpad
 void main() {
   print('hello world');
