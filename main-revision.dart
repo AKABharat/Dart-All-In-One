@@ -365,7 +365,34 @@ void main() {
   
 //  *****************************************
 
-
-}
+  // 𝐓𝐎𝐏𝐈𝐂 - 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧𝐬 -------------------------------------------------------------------------
   
+//   collection are the group of objects representing a particular element
+// there are varilty of collections avalable in dart 
+  // but we are taking three types only :
+  //   Lists   Maps   Sets
+  // Collection-if , Collection-for  , Spreads
+
+//   Lists  ---------------
+//   => Lists [also know as array in other programming language]
+//   Lists are used to represent the collections of values
+  // indexing starts from zero
+  // eg-
+  var cities = ['delhi' , 'new york' , 'moscow'];
+  print(cities);
+  print(cities[0]); // here delhi, new york , moscow are called objects and cities is called element
+//   print(cities[3]); it gives index out of range error
+  
+//   NOTE :  [] is called subscript operator
+  // printing each object of element cities :
+ // method 1
+  cities.forEach((n)=>{print('$n')});
+  // method 2
+  // interating using for loop
+  for(int i=0;i<cities.length;i++){
+    print(cities[i]);
+  }
+}
+
+
 /*creator : Bharat */
