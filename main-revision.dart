@@ -374,6 +374,7 @@ void main() {
   // Collection-if , Collection-for  , Spreads
 
 //   Lists  ---------------
+
 //   => Lists [also know as array in other programming language]
 //   Lists are used to represent the collections of values
   // indexing starts from zero
@@ -392,7 +393,29 @@ void main() {
   for(int i=0;i<cities.length;i++){
     print(cities[i]);
   }
-}
 
+  // TOPIC - For-in loop
+  var cities = ['delhi','new york','moscow'];
+  for(var i in cities){
+    print(i);
+  }
+  
+//   note : <String> is a type notation which is used to denote that list contains string type objects
+  var city = <String> ['london','delhi'];
+  print(city);
+  
+  // note :  a list declared as 'final' can not be reassigned with another objects but can still be modified
+//   eg-
+  final moj = ['london','paris','moscow'];
+  print(moj);
+  // you can modify like this given below
+  moj[0]='jaipur';
+  print(moj);
+  // but , can not modify like this
+//   moj = 'las vegas';
+//   print(moj);
+  
+// Map -------------------------------------
+}
 
 /*creator : Bharat */
