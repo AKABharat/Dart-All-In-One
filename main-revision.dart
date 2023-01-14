@@ -12,7 +12,7 @@ void main() {
 // TOPIC : datatypes in dart
 // int bool(true/false) double float String
 
-  var name = 'bharat doodi'; // String
+  var name = 'bharat'; // String
   var age = 20; // int
   var student = true; // bool
   var marks = 50.00; // float
