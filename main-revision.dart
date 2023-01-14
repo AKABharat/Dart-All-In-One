@@ -340,5 +340,32 @@ void main() {
   print(' hello '*5); // keep string on lhs and numberic value on rhs side of multiplication sign
   
 //  *****************************************
+
+// TOPIC : Enum
+  // enum is a special type of datatype
+  // an variable with type enum has predefined set of contant values 
+  /* syntax : 
+  enum variable_name{
+    value1,
+    value2,
+    value3
+    .
+    .
+    .
+    valueN
+  }
+  */
+  
+//  *****************************************
+  
+//   TOPIC : 'import'
+//   import statement is used to import the funcitonality [like package, libray,etc] which lie outside of our code
+//   eg : import 'dart:io'
+//        import 'dart:math' , etc
+  
+//  *****************************************
+
+
+}
   
 /*creator : Bharat */
