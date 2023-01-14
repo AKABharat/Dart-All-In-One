@@ -291,5 +291,54 @@ void main() {
 } 
 
 //  *****************************************
+  
+//  *****************************************
 
+ // TOPIC : Dynamic type
+  // when you declare a variable a 'dynamic' type than it can take value of any type
+//   eg-
+  dynamic ex;
+  ex = 10;
+  print(ex);
+  ex= true;
+  print(ex.runtimeType);
+  ex = 'hello';
+  print(ex);
+  print(ex.runtimeType);
+  ex= 54.3;
+  print(ex);
+  print(ex.runtimeType);
+  
+//  *****************************************
+
+// TOPIC : Control Flow
+  // control flow helps in making making decision based on some condition
+  /*
+   control flow are of following type :
+   if/else statement
+   while loop [contains break and continue]
+   for loop
+   switch statement [contains break] 
+   enumeration
+   * */
+    
+//  *****************************************
+  
+  // TOPIC : String multiplication
+  // you can even multiply a the string with an integer value
+//   like : 'String' * numberical value (integer) say N = N times 'String'
+                
+  var i = 1;
+  while(i<=5){
+    print('*' * i );
+    i++;
+  }
+  
+//   NOTE :YOU CAN NOT DO THIS below
+//       print(5*'hello'); // can not multiply string like this by keeping string on RHS of numeric value
+
+  print(' hello '*5); // keep string on lhs and numberic value on rhs side of multiplication sign
+  
+//  *****************************************
+  
 /*creator : Bharat */
