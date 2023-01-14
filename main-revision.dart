@@ -185,8 +185,6 @@ void main() {
   print(5>=2);
   print(5<=2);
 
-  
-  
 //   example  of conditional logic using if else
   if(5!=2)
     print('executed !');
@@ -222,6 +220,72 @@ void main() {
   
 // TOPIC : type interface with 'var'
   
+//   as dart is static type language so it interence the type of the expression.
+  // infernence means to know the type of the expression particly or fully at compile time.
+  // so we do not need to declare the type of the variable explicitly
+  // so we use var keyword as a prefix to denote the type , but compiler will automaticlly know partically or fully the type of variable or expression
+  //eg : 
+  String name = 'bharat';
+  print(name);     // we have taken the same string 'bharat'
+  print(name.runtimeType);
+  var another_name = 'bharat';
+  print('another_name'); 
+  print(another_name.runtimeType);
+//   ------------------------------------------
+//   CASE 1
+  print('CASE 1');
+  var age = 32; // declared and initialsed at the same time
+  print(age);
+  print(age.runtimeType);
+//   age = 'now name'; //THIS GIVES ERROR because while using 'var' keyword for a variable , if variable is declared and initialised at the same time then - the 'data type' of the variable already  decided by the expression or value it has been given at compilet time
+//   print(age); 
+//   -------------------------------------------
+//   CASE 2
+   print('CASE 2');
+  var man;  // declare only
+  man = 32;
+  print(man);
+  print(man.runtimeType);
+  man = 'now name';
+  print(man);
+  print(man.runtimeType);
+//   --------------------------------------------
+//   NOTE : basically there are three keyword used for type inference
+  // 1. var    2. final   3. const
+  
+  // var - can be set more than one for any expression or variable 
+//   eg-
+    var checking; // IT IS VALID FOR CASE 2 ONLY NOT FOR CASE 1
+    checking = 'bharat';
+    checking = 43;
+    checking = 43.44;
+  
+  // final - variable expression declared with this type can be set only once , you can only perform read operation on the variable and can not perform write operation
+//   eg - 
+  final manff=32;  // should be declared and initiliazed at the same time // if not so than it gives compilation error that a value must be assigned to the final variable BEACUSE if WHEN WE DELCARE A VARIABLE WITH A FINAL KEYWORD IS DECLARED THAN IT CONTAINS GARBAGE VALUE , NOW THAT GARBAGE VALUE CANNOT BE CHANGED BEALUSE VARAIBLE IS TYPE FINAL , SO THAT GARBAFGE VALUE IS FINAL VALUE FOR THAT VAIABLE , THATS WHY IT SAYS TO ASSIGN A VALUE AT THE TIME OF DELCARATION
+  print(manff);
+  print(manff.runtimeType);
+  // below this gives ERROR BECAUSE YOU CAN NOT CHANGE VALUE NOW OF FINAL TYPE VARIABLE
+//   manff = 'now name';
+//   print(manff);
+//   print(manff.runtimeType);
+  
+//   const - it is compile time constant
+  
+  const kile = 'hello';
+    
+  // BELOW GIVES ERROR BEALUSE A VARIABLE OF TYPE CONST SHOULD BE INITIALIZED AT THE SAME TYPE OF DECARATION
+//   const kile;   // to use this code [line 58 59] please comment the [line 55] 
+//   kile = 'hello';
+  print(kile);
+  print(kile.runtimeType);
+//   kile = 'world'; // gives compile time error beacuse you can not assign new value to a varaible declared as const [constant]
+//   print(kile);
+  
+  // best practice : const > final > var [ so that you can use a particular vairable with a value you do not want to change | you get to know error at compile time only ]
+  
 } 
+
+//  *****************************************
 
 /*creator : Bharat */
