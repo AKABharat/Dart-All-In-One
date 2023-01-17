@@ -443,6 +443,59 @@ void main() {
     'height' : 182.3,
   };
   print(person);
+
+//  *****************************************
+
+  // TOPIC : Null safety 
+   // Null safety is a feature which lets you to make a varaible or expression an null type or nullable 
+
+  // bydefault a variable of any type string/int/etc and any expression are not null [bydefault] they contains some value [or garbage value] which makes its non-null , now
+  // if you try to make any variable/epression nullable than it can not be nullable , as it bydefault contains some value and you can not declare it as nullable [ null value ]
+  // so to make variable or expression nullable [null] we use 'null safety feature'
+  // by using prefix before name of any variable or expression we make it  variable which can contains null value also
+
+  //   summary of above:
+//   you can not make any variable of any type as null or contain 'null' as value , because when you declare any variable it inplicitely contains garbage value of that type of the type the variable is 
+// int x = null; // so this gives error
+// print('value of x : $x');
+//   to make variable null we use ? symbol after type of variable and before name of the vairalbe
+    int ?y=null; // NOTE: this also means that value y contains null value =>  int ?y; [no need to assign = null , as we have defined by ? symbol that it also can contain null value also]
+  print('value of y : $y');
+  int ?kk;
+  print('value of kk : $kk');
+  
+  // NOTE THAT : we can not 2 variable if anyone of them is null 
+ //  eg-
+//   var ?aa; // this gives error
+//   var bb =3;
+//   print(aa+bb);
+  
+//   SUB-TOPIC : Flow Analysis - Promotion
+  // by flow analysis feature -> 'promotion' makes the nullable variable 'tt' is promoted to non-nullable varible inside the else branch
+  int ?tt ; // nullable variable
+  var rr = 4;
+  if(tt==null){
+    print('tt is null');
+  }else{
+  print(tt+rr); // tt becomes non-nullable hence does not produce error as [line 20-22]
+  }
+  
+//   SUB-TOPIC : Flow Analysis - Definite Assignment
+  // flow analysis helps to make it easier to write null-safe code
+//   in definite assignement  the dart knows that before printing nullable variable it will be assigned with a value and it will become non-nullable variable
+//   eg-
+  int ?ff = 10;
+  //NOTE : Definite Assignment gives you the ability to declare a non-nullable variable and initialize it later
+  var ee;
+//   print(ee); it gives error as ee is a non-nullable variablee and it must be assigned before it get printed this is done by definite assignment
+  if(ff>=0){
+    ee=1;
+  }else{
+    ee=-1;
+  }
+  print(ee);
+
+//  *****************************************
 }
 
 /*creator : Bharat */
