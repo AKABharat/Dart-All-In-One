@@ -263,9 +263,11 @@ void main() {
 //   eg-
   var checking; // IT IS VALID FOR CASE 2 ONLY NOT FOR CASE 1
   checking = 'bharat';
+  print(checking);
   checking = 43;
+  print(checking);
   checking = 43.44;
-
+  print(checking);
   // final - variable expression declared with this type can be set only once , you can only perform read operation on the variable and can not perform write operation
 //   eg -
   final manff =
@@ -502,5 +504,73 @@ void main() {
   print(ee);
 
 //  *****************************************
-}
+
+// TOPIC - Assertion Operator !
+
+// Assertion operator is denoted by '!' and also called as 'bang operator' because if the nullable variable value dones not change to non-nullable value before assigning then it will generate error
+// Assertion operator is used to 'assign a nullable value to a non-nullable variable'
+// eg-
+  // int? maybeNull;
+  // int NonNullValue = maybeNull;
+  // print(value); // this gives an error that you can not assign nullable value  i.e null value of maybeNull to a non-nullable variable 'NonnullValue'
+  int? maybeNull;
+  int x = 19;
+  if (x > 0) {
+    maybeNull =
+        x; // we made nullable variable now having non-nullable value as we know the condition will always be true
+  }
+  // int NonNullValue = maybeNull;  //this also gives error that nullable value can not be assign to non-nullable variable // TO DO THIS WE USE ASSERTION OPERATOR '!' WE USE AS SUFFIX AFTER NAME OF NULLABLE VALUE
+  int NonNullValue =
+      maybeNull!; // now , assertion operator basically used to tell the compiler that a nullable variable  is null at a time but it will be have have non-nullable  value // means a nullable variable will always have non-nullable value
+  print(maybeNull);
+  print(NonNullValue);
+  // -------------------------------------------------
+// another way of assigning a value of nullable variable to a Non-nullable variable is
+  //  by using  '??'
+  x = -1;
+  int? Nullmay;
+  if (x > 1) {
+    Nullmay = x;
+  }
+  int NonNullVar = Nullmay ?? 0;
+  print(Nullmay);
+  print(NonNullVar);
+
+//  *****************************************
+
+// TOPIC - Conditional Access Operator
+
+  const music = <String?>['pop', 'classic', null];
+  for (var i in music) {
+    print(i
+        ?.toUpperCase()); // => here we used conditional access operator with i as 'i?.'
+    // main function of conditional access operator is to return Uppercase value if 'i' is not null , other if 'i' is null then return 'null' value
+  }
+
+//  *****************************************
+
+  // topic - Null Safety with Collections
+
+// like here we have taken 'list' collection
+// const college = ['harvard', 'oxford', null]; // this does not give error because we have not specifed the type or which type of values this list can contain
+// const college = <String>['harvard', 'oxford', null]; // this gives error as null value can not be assign to a list of type string
+  const college = <String?>[
+    'harvard',
+    'oxford',
+    null
+  ]; // now using ? we define that the list college can contain null value also
+  for (var col in college) {
+    print(col);
+  }
+  // now if we change values to uppercase
+  // for (var col in college) {
+  //   print(col.toUpperCase()); // now this does not work if a value is null , to avoid this we use if statement
+  // }
+
+  for (var col in college) {
+    if (col != null)
+      print(col
+          .toUpperCase()); // now this does not work if a value is null , to avoid this we use if statement
+  }
+} 
 /*creator : Bharat */
