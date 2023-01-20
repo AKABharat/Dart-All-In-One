@@ -572,5 +572,62 @@ void main() {
       print(col
           .toUpperCase()); // now this does not work if a value is null , to avoid this we use if statement
   }
-} 
+
+// *************************************
+
+// TOPIC : Functions
+
+// 2023-01-20 19:18:18
+// function is a piece of code which encapsulate a small chunk of code and perfome some functionality
+// function helps us to write more maintainable code
+  displayName();
+  displayName();
+
+  // -------------------------------------
+
+  //2023-01-20 19:27:19
+// topic - function argument - it is a value or expression or literal that a function recives when it is called
+
+  var name1 = 'bharat';
+  var age1 = 20;
+  describe(name1, age1);
+
+  var name2 = 'program';
+  var age2 = 999;
+  describe(name2, age2);
+
+  // describe('william', 'lol'); SHOWS ERROR [IT WILL SHOW ERROR WHEN YOU CHANGE THE TYPE OF AGE 'int age' IN ARGUMENT TO 'var age' ] it created problem , so we shoud spefify the type the argument
+  describe('william', 43);
+
+  // --------------------------------------------
+  // topic- return keyword
+  // void means that function has no return value // if the return is non-void i.e. return is either int , float , String etc , then function must have something to retune , but the return value should be of type which function return has
+// 'return' is a statment which means after performing functinality by a funtion function return the value if the function has non-void type else if return type is void then function does not return any value
+
+  print(describ('bharat', 20));
+  // or
+  final taking = describ('bharat', 20);
+  print(taking);
+}
+
+// void means that function has no return value // if the return is non-void i.e. return is either int , float , String etc , then function must have something to retune , but the return value should be of type which function return has
+// function for topic - intro [function]
+void displayName() {
+  // user defined function // it does not take any argument nore return any value
+  print('hello');
+  print('world....');
+}
+
+// function for topic - argument [function]
+void describe(var name, int age) {
+  // note : the type of arguments must be same as
+  // name and age are value/expressio/ literal which a fuction takes init when it is called
+  print('hi my name is $name and my age is $age');
+}
+
+// function for topic - return [function]
+String describ(String name, int age) {
+  return 'hi i am $name. i am $age old';
+}
+
 /*creator : Bharat */
