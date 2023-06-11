@@ -4,6 +4,9 @@ Welcome to the Dart All-In-One repository! This repository contains a comprehens
 - This is a dart code file containing the concept and topics for revision purpose.
 - Please ignore spelling mistakes.
 - I WILL ADD MORE CODE HERE...
+
+--> **TO GET STARTED GO TO main-revision.dart **
+
 ## Introduction
 
 Dart is a powerful and flexible programming language developed by Google. It's widely used for building mobile, web, and server applications. This repository serves as a centralized location for Dart code snippets and examples, making it easier for developers to explore and understand various Dart concepts.
