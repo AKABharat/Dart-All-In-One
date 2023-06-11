@@ -5,7 +5,7 @@ Welcome to the Dart All-In-One repository! This repository contains a comprehens
 - Please ignore spelling mistakes.
 - I WILL ADD MORE CODE HERE...
 
---> **TO GET STARTED GO TO main-revision.dart **
+➡️ **TO GET STARTED GO TO main-revision.dart** ⬅️
 
 ## Introduction
 
