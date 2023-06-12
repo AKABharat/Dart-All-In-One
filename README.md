@@ -38,7 +38,7 @@ Please ensure that your contributions align with the purpose of this repository,
 
 ## Licenses
 
-This code repository is dual-licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and [MIT License](https://opensource.org/licenses/MIT). You are free to choose either of the licenses to use, modify, and distribute the code in this repository for both commercial and non-commercial purposes. Choose the license that best suits your requirements.
+This code repository is dual-licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to choose either of the licenses to use, modify, and distribute the code in this repository for both commercial and non-commercial purposes. Choose the license that best suits your requirements.
 
 Please note that the code snippets and examples provided in this repository may have their own licenses specified within the code files. Make sure to review and comply with the individual license requirements when using or distributing specific code snippets.
 
