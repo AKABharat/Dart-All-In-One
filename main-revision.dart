@@ -4,6 +4,7 @@
 // ⭐ TRY TO UNDERSTAND CODE WITH CONCEPTS LINE BY LINE , EVERY INFORMATION IS GIVEN RELATED TO THE CODE IN COMMENTS ⭐
 // please ignore the spelling mistakes.
 // program written using dartpad
+// You can run the code also on https://zapp.run
 void main() {
   print('hello world');
 
@@ -30,12 +31,16 @@ void main() {
   var str2 = 'world';
   // string concatination
   print(str1 + " " + str2);
-  // string interpolation
-  print('$str1 $str2'); // or print('${str1} ${str2}');
+  // string interpolation: String interpolation is a feature that allows you to insert the values of variables or expressions into a string literal, without using concatenation or formatting methods.
+  print('$str1 $str2'); // or
+  print('${str1} ${str2}');
 
   // we can even evalute a expression in string interpolation
   int num = 10;
-  print('${num * 10 + 20}'); // 120 output
+  print('${num * 10 + 20}'); // 120 output  or
+  print(num + 110);
+  print(num * 12);
+  print(num * 10 + 20);
 
   //**************************************
 
@@ -44,7 +49,8 @@ void main() {
   // if you want to use \ then we use string raw r
 
   // string escape to use ' or "
-  print('today i\'m feeling good');
+  print('today i\'m feeling good'); // or
+  print("today i'm feeling good");
 // string escape to use \
   print(r'c:\window\desktop');
 
