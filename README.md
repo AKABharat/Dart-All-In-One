@@ -3,6 +3,7 @@
 Welcome to the Dart All-In-One repository! This repository contains a comprehensive collection of code examples and snippets covering various Dart concepts. Whether you're a beginner learning Dart or an experienced developer looking for quick references, this repository aims to provide you with a valuable resource.
 - This is a dart code file containing the concept and topics for revision purpose.
 - Please ignore spelling mistakes.
+- 📍**Learn by seeing the code and practice. It's an Text Code based Learning which will take your minimum time and straight forward learning.**
 - I WILL ADD MORE CODE HERE...
 
 ➡️ **TO GET STARTED GO TO [main-revision.dart](https://github.com/AKABharat/Dart-All-In-One/blob/main/main-revision.dart)** ⬅️
